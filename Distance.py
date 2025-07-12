@@ -31,7 +31,7 @@ def randomMatrix(COUNT):
 X, y = randomMatrix(COUNT)
 #split into 2 sets, train 800 and test 200 sets, test size = 0.2, which is 20% of the whole set, so 200
 XTrain, XTest, yTrain, yTest = train_test_split(X, y, test_size=TEST, random_state=42)
-#reshape for cnn since it only takes matrices?
+#reshape for cnn since it only takes matrices
 XTrain = XTrain.reshape(-1, 25, 25, 1)
 XTest = XTest.reshape(-1, 25, 25, 1)
 
@@ -45,7 +45,7 @@ model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dense(1))
 model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 
-#trainnig the model, more epochs = less loss, validation about the same throughout, batch size seems to affect processing power, speed, and validation loss for some reason?
+#trainnig the model, more epochs = less loss, validation about the same throughout, batch size seems to affect processing power, speed, and validation loss
 history = model.fit(XTrain, yTrain, epochs = EPOCHS, batch_size = BATCH, validation_data=(XTest, yTest))
 
 #checking models accuracy, also got from cnn website
