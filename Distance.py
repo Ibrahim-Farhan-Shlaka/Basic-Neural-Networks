@@ -4,10 +4,10 @@ from sklearn.model_selection import train_test_split
 from tensorflow.keras import datasets, layers, models
 import matplotlib.pyplot as plt
 
-COUNT = 1000 #5k is best
-EPOCHS = 25 #150 is best
-BATCH = 128 #128 is best
-TEST = 0.1 #0.1 is best
+COUNT = 1000
+EPOCHS = 25
+BATCH = 128
+TEST = 0.1
 
 #this function generates random matrices with 2 randomly placed points, COUNT is the amount of samples it generates
 def randomMatrix(COUNT):
@@ -61,7 +61,7 @@ plt.ylabel("Predicted Distance")
 plt.title(f"True vs Predicted Euclidean Distances\nAccuray{accuracy}")
 plt.legend()
 plt.grid()
-plt.savefig(f'ai proje/A/A_{COUNT}samples_{EPOCHS}epoch_{BATCH}batch_{TEST}test.jpg', bbox_inches='tight')
+plt.savefig(f'A/A_{COUNT}samples_{EPOCHS}epoch_{BATCH}batch_{TEST}test.jpg', bbox_inches='tight')
 plt.show()
 
 #this graph is to show the loss of the model, 2 types, validation loss and training loss
@@ -73,7 +73,7 @@ plt.ylabel("Loss (mean squared error)")
 plt.title("Training and Validation Loss")
 plt.legend()
 plt.grid()
-plt.savefig(f'ai proje/A/A_{COUNT}samples_{EPOCHS}epoch_{BATCH}batch_{TEST}test LOSSES.jpg', bbox_inches='tight')
+plt.savefig(f'A/A_{COUNT}samples_{EPOCHS}epoch_{BATCH}batch_{TEST}test LOSSES.jpg', bbox_inches='tight')
 plt.show()
 
 #this part is so the user can manually pick an index to look at and see how well the neural network predicted it
