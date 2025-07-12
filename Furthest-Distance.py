@@ -76,7 +76,7 @@ plt.ylabel("Predicted max Distance")
 plt.title("True vs Predicted maximum Distances")
 plt.legend()
 plt.grid()
-plt.savefig(f'C/C_{COUNT}samples_{EPOCHS}epoch_{BATCH}batch_{TEST}test.jpg', bbox_inches='tight')
+plt.savefig(f'Basic-Neural-Networks/C/C_{COUNT}samples_{EPOCHS}epoch_{BATCH}batch_{TEST}test.jpg', bbox_inches='tight')
 plt.show()
 
 #this graph is to show the loss of the model, 2 types, validation loss and training loss
@@ -88,7 +88,7 @@ plt.ylabel("Loss (mean squared error)")
 plt.title("Training and Validation Loss")
 plt.legend()
 plt.grid()
-plt.savefig(f'C/C_{COUNT}samples_{EPOCHS}epoch_{BATCH}batch_{TEST}test LOSSES.jpg', bbox_inches='tight')
+plt.savefig(f'Basic-Neural-Networks/C/C_{COUNT}samples_{EPOCHS}epoch_{BATCH}batch_{TEST}test LOSSES.jpg', bbox_inches='tight')
 plt.show()
 
 #this part is so the user can manually pick an index to look at and see how well the neural network predicted it
