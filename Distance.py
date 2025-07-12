@@ -9,7 +9,7 @@ EPOCHS = 25 #150 is best
 BATCH = 128 #128 is best
 TEST = 0.1 #0.1 is best
 
-#this function generates random matrices with 2 randomly placed points,COUNT is the amount of samples it generates
+#this function generates random matrices with 2 randomly placed points, COUNT is the amount of samples it generates
 def randomMatrix(COUNT):
 
     #zeroed matrices to fill
@@ -17,7 +17,7 @@ def randomMatrix(COUNT):
     y = np.zeros(COUNT)
     
     for i in range(COUNT):
-        #picking 2 ranom points and filling them
+        #picking 2 random points and filling them
         point1 = (np.random.randint(0, 25), np.random.randint(0, 25))
         point2 = (np.random.randint(0, 25), np.random.randint(0, 25))
         X[i, point1[0], point1[1]] = 1
