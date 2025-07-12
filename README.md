@@ -17,6 +17,6 @@ All were made using tensorflow in python.
 
 # Notes
 1. the models all output graphs for the sake of statistical analysis, to help you tune the parameters to your liking.
-2. You may get file path errors, these are caused by the graphs, please check the filepaths and edit them if you do.
+2. You may get file path errors, these are caused by the graphs, put the entire project in a folder named "Basic-Neural-Networks".
 
 # Thank you :)
