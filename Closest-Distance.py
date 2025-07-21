@@ -9,7 +9,7 @@ EPOCHS = 100
 BATCH = 128
 TEST = 0.2
 
-#generating random matrices with points
+#generating random matrices with points at random places
 def randomMatrix(COUNT):
 
     X = np.zeros((COUNT, 25, 25))
